@@ -1,35 +1,58 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="./assets/img/4geeks.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+<html lang="es">
 
-    <!-- Fontawesome is our recomended library for icons -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./assets/img/rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="./assets/img/4geeks.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generador de Excusas Crys 2.0</title>
+
+  <!-- FontAwesome (para íconos) -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- CSS propio -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="bg-dark text-light">
+
+  <!-- Contenedor principal con fondo futurista y altura completa -->
+  <div class="container-fluid sensacion-futurista min-vh-100 d-flex flex-column justify-content-between">
+
+    <!-- Sección principal -->
+    <div class="container py-5">
+
+      <!-- TITULO-->
+      <div class="encabezado mb-4">
+        <h1 class="display-5 fw-bold texto-neon">Generador De Excusas 2.0</h1>
       </div>
+
+      <!-- DONDE SE VE LA EXCUSA -->
+      <div class="caja-excusa mb-3 p-4 rounded bg-negro">
+        <p id="Excusa" class="fs-4 texto-neon-verde">El destino decidió improvisar justo cuando salía.</p>
+      </div>
+
+      <!-- BOTON CREADO PARA NUEVA EXCUSA-->
+      <div class="caja-boton">
+        <button id="botonExcusa" class="btn btn-neon-borde px-4 py-2 fw-bold">
+          <i class="fas fa-dice"></i> Generar nueva excusa
+        </button>
+      </div>
+
     </div>
 
-    <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
-    <script type="module" src="/app.js"></script>
-  </body>
+    <!-- Footer -->
+    <footer class="pie text-center py-3 mt-5 bg-footer text-secondary small">
+      <span>© 2025 Crystian Ariel Carmona Trujillo — created with ❤️ and</span>
+      <code class="marca-code"><b>code</b></code>
+    </footer>
+
+  </div>
+
+  <script type="module" src="/app.js"></script>
+</body>
 </html>

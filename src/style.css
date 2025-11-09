@@ -1,5 +1,82 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
-    background: white;
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+/* Fondo animado futurista */
+.sensacion-futurista {
+    background: linear-gradient(270deg, #0d0d0d, #1a1a1a, #0d0d0d); 
+    background-size: 600% 600%;
+    animation: movimiento-futurista 20s ease infinite;
+}
+
+@keyframes movimiento-futurista {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+/* Fondo gris para footer */
+.bg-footer {
+    background-color: #1a1a1a;
+}
+
+/* Texto azul neon para títulos */
+.texto-neon {
+    color: #33ffff;
+    text-shadow: 0 0 10px #33ffff, 0 0 20px #33ffff;
+    transition: all 0.3s ease;
+}
+
+.texto-neon:hover {
+    text-shadow: 0 0 15px #33ffff, 0 0 30px #33ffff, 0 0 45px #33ffff;
+    transform: scale(1.05);
+}
+
+/* Texto verde neon para excusa */
+.texto-neon-verde {
+    color: #00c896;
+    text-shadow: 0 0 10px #00c896, 0 0 20px #00c896;
+    transition: all 0.3s ease;
+}
+
+.texto-neon-verde:hover {
+    text-shadow: 0 0 15px #00c896, 0 0 30px #00c896, 0 0 45px #00c896;
+    transform: scale(1.03);
+}
+
+/* Botón neon Y HOVER PARA PASAR EL MOUSE */
+.btn-neon-borde {
+    border: 2px solid #33ffff;
+    color: #33ffff;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.btn-neon-borde:hover {
+    background-color: #33ffff;
+    color: #0d0d0d;
+    box-shadow: 0 0 15px rgba(51, 255, 255, 0.5), 0 0 30px rgba(51, 255, 255, 0.3);
+}
+
+/* Separación de secciones */
+.encabezado { margin-bottom: 2rem; }
+.caja-excusa { margin-bottom: 1.5rem; }
+.caja-boton { margin-top: 1rem; }
+
+/* Footer MARCA PERSONAL  */
+.pie {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.marca-code {
+    color: #1eff00;
+    font-size: 1.1rem;
 }
